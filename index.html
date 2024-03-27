@@ -7,6 +7,8 @@
       padding-top: 40px;
       padding-bottom: 40px;
       background-color: #90b4ce;
+      display: flex;
+      justify-content: center;
      }
 
      .banner-image{
@@ -17,28 +19,41 @@
      }
 
      .thumbnail {
-        width: 48px;
-        height: 48px;
-        border-radius: 48px;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
         object-fit: cover;}
 
       .name{
-        color: #094067
+        color: #094067;
+        display: flex;
+        justify-content: center;
       }
 
       .social-icons a{
-        color: #094067
+        color: #094067;
         text-decoration: none;
+        display: flex;
+        justify-content: space-around;
       }
  
       .link{
         background-color: #fffffe;
+        display: flex;
+        align-items: center;
       }
 
       .link a{
         color: #ef4565; 
+        text-align: center;
+        flex-grow: 1;
       }
 
+      .items{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
 
      }
     </style>
@@ -46,12 +61,13 @@
   </head>
 
   <body>
+  <div class="items">
     <div class="banner">
       <img src="/thumbnails/darby_headshot.jpg" alt="Darby ODonnell headshot" class="banner-image">
     </div>
 
     <div class="name">
-      Darby O'Donnell
+      <h1>Darby O'Donnell</h1>
     </div>
 
     <div class="social-icons">
@@ -66,15 +82,27 @@
     </div>
 
     <div class="link">
+
+      <img src="/thumbnails/brookes_shoe.png" alt="Brooks adrenaline running shoe in color Parchment/White/Vista" class="thumbnail">
+      <a target="_blank" href="https://www.brooksrunning.com/en_us/womens/shoes/road-running-shoes/adrenaline-gts-23/120381.html">
+          My favorite running shoe
+        </a>
+
+    </div>
+    
+    <div class="link">
+      
       <img src="/thumbnails/essay_icon.png" alt="AI Generated Icon for Essay" class="thumbnail">
       <a target="_blank" href="https://paulgraham.com/articles.html"> Must read essays for first-time CEOs - Paul Graham</a>
 
-      <div class="link">
+    </div>
+
+    <div class="link">
         <img src="/thumbnails/Ask_Icon.png" alt="Picture of duck and the word Ask" class="thumbnail">
         <a target="_blank" href="https://ask.firstdraft.com/forums/10-appdev-1-booth-spring-2024/posts"> App Dev Ask Platform</a>
 
     </div>
-
+  </div>
   </body>
 
 </html>
